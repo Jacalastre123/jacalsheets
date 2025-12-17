@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JacalSheets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+        <div class="arith">
+    <form>
+        <h4>Arithmetic</h4>
+        <label for="num1" max="5">Question: </label>
+        <input type="number" id="num1" >
+        
+        <select id="times">
+            <option value="/">÷</option>
+            <option value="*">x</option>
+            <option value="+">+</option>
+            <option value="=">-</option>
+        </select>
+        
+        <input type="number" id="num2"><br>
+        <label for="lines">Lines: </label>
+        <input type="number" id="lines" value="1">
+        
+    </form>
+        <button onclick="submit(this)">Submit</button>
+        <button onclick="random(this)">Random</button>
+        </div>
+        <div class="pericular">
+        <form>
+    <h4>Area/Perimeter</h4>
+       <select id="periSele" onclick="check()">
+        <option value="RectangleAr">Rectangle (Area)</option>
+        <option value="RectanglePer">Rectangle (Perimeter)</option>
+       <option value="Circumference">Circumference</option>
+     
+       </select>
+<br>
+       <label id="heightLabel" for="heights" style="display: none;">Height: </label><input type="number" id="heights" style="display: none;" placeholder="Height">
+       <label id="widthLabel" for="widths" style="display: none;">Width: </label><input type="number" id="widths" style="display: none;" placeholder="width">
+       <label id="radiusLabel" for="radius" style="display: none;">Radius: </label><input type="number" id="radius" style="display: none;" placeholder="radius">
+       <label for="lines2">Lines: </label><input type="number" id="lines2" value="1">
+
+    </form>
+    <button onclick="submit(this)">Submit</button>
+    <button onclick="random(this)">Random</button>
+    </div>
+    <br>
+    
+    
+     <button onclick="printing()">Print</button>
+    
+    </div>
+
+    <div class="menu2">
+    <div id="paper">
+        <div>
+        <h3 contenteditable="true">My Math Worksheet</h2>
+        <hr>
+	<h4 contenteditable="true">By JacalSsheets</h3>
+    </div>
+    </div>
+    </div>
+    <script src="value.js"> </script>
+    <script src="main.js"></script>
+</body>
+</html>
