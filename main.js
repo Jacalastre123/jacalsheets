@@ -11,8 +11,8 @@ if (which == "Pericular") {
                     case "Area":
                         const square1 = document.createElement("div")
                         square1.className = "Square"
-                        square1.style.height = first * 5 + "px"
-                        square1.style.width = second * 5 + "px"
+                        square1.style.height = "40px"
+                        square1.style.width = "80px"
                         newQuest.innerHTML = "Area: <br>Width: " + first + "<br>height: " + second
                         holder.appendChild(square1)
                         break;
