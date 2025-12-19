@@ -105,5 +105,22 @@
 
         }
 
+        .algebra {
+            display: grid;
+        }
+
+        #multiply, #addOn, #ans, #letters {
+            width: 2em;
+        }
+
+        .flexing {
+            display: block flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+       
+
+
 
    
