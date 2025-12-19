@@ -11,8 +11,8 @@ if (which == "Pericular") {
                     case "Area":
                         const square1 = document.createElement("div")
                         square1.className = "Square"
-                        square1.style.height = "40px"
-                        square1.style.width = "80px"
+                        square1.style.height = first * 5 + "px"
+                        square1.style.width = second * 5 + "px"
                         newQuest.innerHTML = "Area: <br>Width: " + first + "<br>height: " + second
                         holder.appendChild(square1)
                         break;
@@ -34,6 +34,12 @@ if (which == "Pericular") {
                         break;
 
                 }
+                holder.appendChild(newQuest)
+            }
+
+            if (which == "Algebra") {
+                const newQuest = document.createElement("h4")
+                newQuest.innerHTML = `${second}${type} + ${mode} = ${first}`
                 holder.appendChild(newQuest)
             }
 
@@ -83,14 +89,15 @@ if (which == "Pericular") {
             else if (button.parentElement.classList.contains("pericular") && pericMode == "Circumference") {
                 Arithmetic(radius.value, null, null, lines2.value, "Pericular", pericMode)
             }
+
+            else if (button.parentElement.classList.contains("algebra")) {
+                Arithmetic(ans.value, multiply.value, letters.value, lines3.value, "Algebra", addOn.value)
+            }
         }
 
         function printing() {
-            const footer = document.createElement("footer")
-            footer.innerHTML = "<h3>JacalSheets</h3><br><p>https://jacalastre123.github.io/HomePage</p>"
-            footer.classList = "foot"
+         
             
-            paper.appendChild(footer)
             window.print()
         }
 
@@ -155,4 +162,19 @@ if (which == "Pericular") {
                     }
                     
                 }
+
+                if (button.parentElement.classList.contains("algebra")) {
+                    multiply.value = Math.floor(Math.random() * 12) + 1
+                    adds = Math.floor(Math.random() * 12) + 1
+                    addOn.value = Math.floor(Math.random() * 12) + 1
+                    letters.value = "x"
+                    Alganswer = multiply.value * adds + addOn
+                    ans.value = Alganswer
+
+                    
+                    
+                }
+
+
+
             }
