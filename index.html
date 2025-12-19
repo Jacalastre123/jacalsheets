@@ -34,7 +34,7 @@
         </div>
         <div class="pericular">
         <form>
-    <h4>Area/Perimeter</h4>
+    <h4>Pericular (Area/Perimeter/Circumference)</h4>
        <select id="periSele" onclick="check()">
         <option value="RectangleAr">Rectangle (Area)</option>
         <option value="RectanglePer">Rectangle (Perimeter)</option>
@@ -48,6 +48,31 @@
        <label for="lines2">Lines: </label><input type="number" id="lines2" value="1">
 
     </form>
+
+			
+    <button onclick="submit(this)">Submit</button>
+    <button onclick="random(this)">Random</button>
+    </div>
+		 <div class="algebra">
+            <h4>2-Step Algebra</h4>
+        <form class="flexing">
+    
+
+      <label for="Multiply" >Question: </label><input type="number" id="multiply" placeholder="4">
+       <input type="text" id="letters"  placeholder="e.g x">
+       <p> + </p>
+   <input type="number" id="addOn" placeholder="4">
+   <p> = </p>
+       <input type="number" id="ans" placeholder="Leave it Empty for just x">
+      
+       
+      
+    </form>
+<form>
+      
+       <label for="lines3">Lines: </label><input type="number" id="lines3" value="3">
+</form>
+			
     <button onclick="submit(this)">Submit</button>
     <button onclick="random(this)">Random</button>
     </div>
@@ -71,3 +96,5 @@
     <script src="main.js"></script>
 </body>
 </html>
+
+
