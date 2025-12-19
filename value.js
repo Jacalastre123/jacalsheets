@@ -11,7 +11,14 @@
         const widthLabel = document.getElementById('widthLabel')
         const radiusLabel = document.getElementById('radiusLabel')
         const lines2 = document.getElementById('lines2')
-
+        const lines3 = document.getElementById('lines3')
+        const ans = document.getElementById("ans")
+        const letters = document.getElementById("letters")
+        const multiply = document.getElementById("multiply")
+        const addOn = document.getElementById("addOn")
         let peric = false
         let pericMode = ""
        let decide;
+       let adds;
+       let Alganswer;
+       
